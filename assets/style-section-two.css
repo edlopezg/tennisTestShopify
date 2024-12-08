@@ -1,0 +1,393 @@
+.rectangle {
+  width: 100%;
+  height: 392px;
+  margin: 0;
+  padding: 72px 168px 67px 255px;
+  background-color: #f3f4f8;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.f-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.tennis {
+  font-family: HelveticaNeue, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 2;
+  letter-spacing: 1.87px;
+  color: #cbe346;
+  margin-bottom: 10px;
+}
+
+.RaquetasAccesorios {
+  font-family: HelveticaNeue, Arial, sans-serif;
+  font-size: 50px;
+  font-weight: normal;
+  line-height: 1.14;
+  letter-spacing: -0.06px;
+  color: black;
+}
+
+.Pelotas {
+  font-family: HelveticaNeue, Arial, sans-serif;
+  font-size: 50px;
+  font-weight: normal;
+  line-height: 1.14;
+  letter-spacing: -0.06px;
+  color: black;
+  margin-right: 230px;
+}
+
+.Conoce-nuestras-raqu {
+  font-family: HelveticaNeue, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.78;
+  letter-spacing: 0.51px;
+  color: #787878;
+  margin-top: 20px;
+}
+
+.Conoce-nuestras-raquetas {
+  font-family: HelveticaNeue, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.78;
+  letter-spacing: 0.51px;
+  color: #787878;
+  position: relative;
+  top: -20px;
+  margin-right: 150px;
+}
+
+.button-second-section {
+ 
+  font-size: 1.5rem;
+  color: black;
+  background: transparent;
+  border: 2px solid black;
+  border-radius: 26.5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  bottom: 70px;
+  right: 270px;
+  width: 234px;
+  height: 53px;
+  margin: 49px 0 0;
+  padding: 15px 38px;
+  border-radius: 26.5px;
+}
+
+@media screen and (max-width: 768px) { 
+  .button-second-section {
+    position: relative;
+    bottom: auto; 
+    right: auto; 
+    margin-top: 20px; 
+    align-self: center; 
+  }
+}
+
+.button-second-section:hover {
+  background: white;
+  color: black;
+}
+
+.container-second-section {
+  width: 530px; 
+  height: 468px; 
+  overflow: hidden;
+}
+
+.carousel-and-text {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.carousel-wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.carousel-item {
+  min-width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.carousel-item .img-container {
+  width: 100%;
+  height: 100%;
+  background-image: url("{{ 'section-two-ball.png' | asset_url }}");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  color: white;
+  text-align: left;
+  width: 250px;
+}
+
+.text-overlay h3 {
+  font-family: HelveticaNeue;
+  font-size: 50px;
+  font-weight: normal;
+  line-height: 1.28;
+  letter-spacing: -0.06px;
+  color: #fff;
+  margin: 0;
+}
+
+.text-overlay h3 span {
+  font-weight: bold;
+  display: block;
+}
+
+.text-overlay p {
+  font-family: HelveticaNeue;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.5;
+  letter-spacing: 0.51px;
+  color: #fff;
+  margin-top: 10px;
+  width: 250px;
+}
+
+.custom-arrows {
+  position: absolute;
+  bottom: 20%;
+  width: 30%;
+  left: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.custom-arrows button {
+  width: 74px;
+  height: 74px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: relative; 
+}
+
+.custom-arrows .custom-prev {
+  background: url('group-copy-2.png') no-repeat center center;
+  background-size: cover;
+  transform: rotate(180deg) translateY(-15px); 
+}
+
+.custom-arrows .custom-next {
+  background: url('group-copy-2.png') no-repeat center center;
+  background-size: cover;
+  transform: translateY(24px); 
+}
+
+
+
+
+
+.carousel-item .text-overlay {
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  color: white;
+  text-align: left;
+  width: 250px;
+}
+
+.carousel-dots {
+  position: absolute;
+  top: 60%;
+  left: 55%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.dot {
+  width: 8px;
+  height: 7.8px;
+  margin: 0 13px 0 8px;
+  background-color: #ebebeb;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #cbe346;
+}
+
+.slider-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  width: 75%;
+}
+
+.image-container {
+  display: flex;
+  gap: 36px;
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.image-wrapper {
+  position: relative; 
+  flex-shrink: 0; 
+}
+
+.image-wrapper img {
+  width: 100%; 
+  max-width: 300px;
+  height: auto;
+  scroll-snap-align: center;
+  border-radius: 4px; 
+}
+
+.number {
+  position: absolute;
+  top: 10px; 
+  left: 10px; 
+  background-color: #cbe346;
+  color: white;
+  font-family: HelveticaNeue, Arial, sans-serif;
+  font-size: 17px;
+  width: 39px;
+  height: 39px;
+  border-radius: 50%;
+  padding: 2px 7px 4px 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.image-container img {
+  flex-shrink: 0; 
+  width: 100%; 
+  max-width: 300px; 
+  height: auto;
+  scroll-snap-align: center; 
+  transition: transform 0.3s ease; 
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .rectangle {
+    padding: 30px 20px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tennis {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .RaquetasAccesorios {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .Pelotas {
+    font-size: 30px;
+    margin-right: 0;
+    text-align: center;
+  }
+  .custom-arrows {
+    bottom: 20%; 
+    width: 35%; 
+    left: 33%; 
+  }
+  .custom-arrows .custom-next {
+    background: url('group-copy-2.png') no-repeat center center;
+    background-size: cover;
+    transform: translateY(22px); 
+  }
+
+  .Conoce-nuestras-raqu,
+  .Conoce-nuestras-raquetas {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .button-second-section {
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container-second-section {
+    width: 100%;
+    height: auto;
+  }
+
+  .carousel-and-text {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carousel-item .text-overlay {
+    top: 7%;
+    left: 30%;
+    width: 80%;
+    font-size: 14px;
+  }
+
+  .carousel-dots {
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .image-container {
+    gap: 25px; 
+    margin-right: 15px;
+    margin-bottom: 25px;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+  }
+}

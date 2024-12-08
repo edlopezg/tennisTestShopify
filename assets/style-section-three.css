@@ -1,0 +1,17 @@
+
+.background-container {
+  background-image: url('action-athlete-ball-342361.png');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  height: 70vh; 
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) { 
+  .background-container {
+    background-size: cover; 
+    background-position: left; 
+    height: 60vh; 
+  }
+}

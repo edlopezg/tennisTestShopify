@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Landing Page Tennis</title>
+      <link rel="stylesheet" href="{{ 'style-section-one.css' | asset_url }}">
+      <link rel="stylesheet" href="{{ 'style-section-two.css' | asset_url }}">
+      <link rel="stylesheet" href="{{ 'style-section-three.css' | asset_url }}">
+      <link rel="stylesheet" href="{{ 'style-section-four-footer.css' | asset_url }}">
+  </head>
+  <body>
+      <header>
+          <nav class="navbar">
+              <div class="logo">
+                  <img src="{{ 'fill-2.svg' | asset_url }}" alt="Logo" width="37px" height="37px">
+              </div>
+              
+             <ul class="menu">
+                  <li><a href="#">Inicio</a></li>
+                  <li><a href="#">Acerca de nosotros</a></li>
+                  <li><a href="#">Historia</a></li>
+                  <li><a href="#">Contacto</a></li>
+              </ul>
+           
+             
+              <div class="language-switcher">
+                  <a href="#">ES</a>
+                  <a href="#">EN</a>
+              </div>
+              <div class="menu-hamburguesa" onclick="toggleMenu()">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                      <g fill="none" stroke="white" stroke-width="2">
+                          <path d="M5 7h20M5 14h20M5 21h20" />
+                      </g>
+                  </svg>
+              </div>
+          </nav>
+      </header>
+  
+      <main>
+          <section class="hero">
+              <div class="content">
+                  <h1>Las mejores raquetas para jugar <span>Tennis</span></h1>
+                  <button class="cta-button">ACERCA DE NOSOTROS →</button>
+              </div>
+          </section>
+      </main>
+      <script>
+          function toggleMenu() {
+              const menu = document.querySelector('.menu');
+              menu.classList.toggle('active');
+          }
+      </script>
+  </body>
+  </html>
+  
