@@ -337,6 +337,7 @@
     width: 35%; 
     left: 33%; 
   }
+
   .custom-arrows .custom-next {
     background: url('group-copy-2.png') no-repeat center center;
     background-size: cover;
@@ -367,6 +368,7 @@
     align-items: center;
   }
 
+ 
   .carousel-item .text-overlay {
     top: 7%;
     left: 30%;
